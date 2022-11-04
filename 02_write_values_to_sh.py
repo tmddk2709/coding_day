@@ -7,6 +7,7 @@ SCOPE = ["https://spreadsheets.google.com/feeds",
 CREDS = ServiceAccountCredentials.from_json_keyfile_name("C:/Users/SANDBOX/sandbox_workspace/data_management/dm_workshop/coding_day/key.json", SCOPE)
 SH_ID = "1l1LhuVXF5WmRX2V-LnJArAYN3Gc_4mMSWKcCO---Sxg"
 
+## 시트에 값 입력하기
 write_values_to_sh(
     sh_id=SH_ID, #스프레드시트 ID
     worksheet_name="승아", #워크시트 이름
@@ -15,6 +16,7 @@ write_values_to_sh(
     creds=CREDS
 )
 
+## 시트에 여러 값 입력하기
 write_values_to_sh(
     sh_id=SH_ID,
     worksheet_name="승아",
@@ -23,9 +25,10 @@ write_values_to_sh(
     creds=CREDS
 )
 
-clear_values(
-    sh_id=SH_ID,
-    worksheet_name="승아",
-    clear_range="A3:B4",
-    creds=CREDS
-)
+## 시트에서 값 지우기
+# clear_values(
+#     sh_id=SH_ID,
+#     worksheet_name="승아",
+#     clear_range="A3:B4",
+#     creds=CREDS
+# )
