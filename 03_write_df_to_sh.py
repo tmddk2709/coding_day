@@ -9,6 +9,7 @@ CREDS = ServiceAccountCredentials.from_json_keyfile_name("C:/Users/SANDBOX/sandb
 SH_ID = "1l1LhuVXF5WmRX2V-LnJArAYN3Gc_4mMSWKcCO---Sxg"
 
 
+## 데이터프레임 만들기
 test_df = pd.DataFrame(
     data={
         "col1":[1, 2, 3],
@@ -16,6 +17,7 @@ test_df = pd.DataFrame(
     }
 )
 
+## 데이터프레임 시트에 기록하기
 write_df_to_sh(
     df=test_df,
     sh_id=SH_ID,
